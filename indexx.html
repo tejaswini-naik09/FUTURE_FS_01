@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tejaswini Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#ffffff;
+    line-height:1.6;
+}
+
+/* NAVBAR */
+nav{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#ff8fa3;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+    z-index:1000;
+}
+
+nav h2{
+    color:white;
+}
+
+.nav-links a{
+    margin-left:25px;
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    opacity:0.8;
+}
+
+/* HOME */
+header{
+    margin-top:70px;
+    height:100vh;
+    background:linear-gradient(to right,#ffe4e9,#ffffff);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+header h1{
+    font-size:40px;
+}
+
+header h1 span{
+    color:#ff4d6d;
+}
+
+header h3{
+    color:#ff4d6d;
+    margin-bottom:10px;
+}
+
+header p{
+    margin:10px 0;
+}
+
+/* BUTTON */
+button{
+    margin-top:15px;
+    padding:10px 22px;
+    background:#ff4d6d;
+    color:white;
+    border:none;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#e63956;
+}
+
+/* SECTION */
+section{
+    max-width:900px;
+    margin:60px auto;
+    padding:0 20px;
+}
+
+h2{
+    color:#ff4d6d;
+    margin-bottom:20px;
+}
+
+h3{
+    margin-bottom:10px;
+}
+
+/* ABOUT */
+#about p{
+    margin-bottom:20px;
+}
+
+/* SKILLS */
+.skills span{
+    background:#ffe4e9;
+    padding:8px 14px;
+    margin:6px;
+    border-radius:20px;
+    display:inline-block;
+    font-size:14px;
+}
+
+/* CARD */
+.card{
+    background:#fff0f5;
+    padding:18px;
+    margin:15px 0;
+    border-radius:10px;
+    box-shadow:0 3px 8px rgba(0,0,0,0.05);
+}
+
+.card a{
+    display:inline-block;
+    margin-top:5px;
+    color:#ff4d6d;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.card a:hover{
+    text-decoration:underline;
+}
+
+/* CONTACT */
+.contact-section{
+    background:linear-gradient(to right,#ffe4e9,#ffffff);
+    padding:50px 20px;
+}
+
+.contact-container{
+    max-width:900px;
+    margin:auto;
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+form{
+    flex:1;
+    min-width:280px;
+}
+
+input, textarea{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border-radius:8px;
+    border:1px solid #ff4d6d;
+}
+
+.contact-box{
+    flex:1;
+    min-width:260px;
+    background:#fff0f5;
+    padding:20px;
+    border-radius:12px;
+    border:1px solid #ff4d6d;
+}
+
+.contact-box h3{
+    color:#ff4d6d;
+    margin-bottom:10px;
+}
+
+.contact-box a{
+    color:#ff4d6d;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.contact-box a:hover{
+    text-decoration:underline;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    background:#ff8fa3;
+    padding:15px;
+    color:white;
+    margin-top:40px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>Tejaswini</h2>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HOME -->
+<header>
+    <div>
+        <h3>Portfolio</h3>
+        <h1>Hi, I'm <span>Tejaswini</span></h1>
+        <p>Aspiring Web Developer | C & Java Learner</p>
+        <button onclick="document.getElementById('projects').scrollIntoView()">View My Work</button>
+    </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am a beginner developer learning web development along with C and Java.</p>
+
+    <h3>Education</h3>
+    <p>
+        10th - Janata Vidyalaya Anilgod (2019-2022)<br>
+        PUC - Govt PU College Idagunji (2022-2024)<br>
+        B.E Computer Science (2024–2028)
+    </p>
+
+    <h3>Interests</h3>
+    <p>Problem solving, coding practice, learning new technologies.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>Skills</h2>
+
+    <h3>Programming Languages</h3>
+    <div class="skills">
+        <span>C</span>
+        <span>Java</span>
+    </div>
+
+    <h3>Web Technologies</h3>
+    <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>Built using HTML & CSS.</p>
+    </div>
+
+    <!-- Add more projects here -->
+</section>
+
+<!-- CERTIFICATES -->
+<section>
+    <h2>Certificates</h2>
+
+    <div class="card">
+        <h3>HP LIFE</h3>
+        <p>Resume Writing & Interviewing</p>
+        <a href="Resume Writing and Job Interviewing.pdf" target="_blank">View Certificate</a>
+
+        <p>AI for Beginners</p>
+        <a href="AI for Beginners Course Certificate.pdf" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="card">
+        <h3>MATLAB</h3>
+        <p>R Programming & Statistical Analysis</p>
+        <a href="Fundamentals of R Programming and Statistical Analysis Certificate.pdf" target="_blank">View Certificate</a>
+
+        <p>Data Analytics using R</p>
+        <a href="Data Analytics using R - Beginner Certificate.pdf" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="card">
+        <h3>Workshop</h3>
+        <p>AI Tools Workshop</p>
+        <a href="AI TOOLS WORKSHOP CERTIFICATE.pdf" target="_blank">View Certificate</a>
+    </div>
+
+    <div class="card">
+        <h3>Springboard</h3>
+        <p>C Programming</p>
+        <a href="C Programming Course Certificate.pdf" target="_blank">View Certificate</a>
+
+        <p>DSA in Python</p>
+        <a href="Data Structures & Algorithms in Python certificate.pdf" target="_blank">View Certificate</a>
+
+        <p>Artificial Intelligence</p>
+        <a href="Artifical Intelligence Certificate.pdf" target="_blank">View Certificate</a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+    <h2>Contact</h2>
+
+    <div class="contact-container">
+
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea rows="4" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-box">
+            <h3>Contact Me</h3>
+
+            <p><strong>Email:</strong><br>
+            Tejaswiniseetaramnaik@gmail.com</p>
+
+            <p style="margin-top:15px;"><strong>LinkedIn:</strong><br>
+            <a href="https://www.linkedin.com/in/tejaswini-naik-751a59357" target="_blank">
+                View Profile
+            </a></p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Tejaswini</p>
+</footer>
+
+</body>
+</html>
